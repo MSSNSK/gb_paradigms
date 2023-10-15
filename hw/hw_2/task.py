@@ -24,16 +24,17 @@ def multiplication_table(num):
     FINAL_VALUE = 10
     result = []
 
-    for i in range(START_VALUE, num+1):
+    for i in range(START_VALUE, num + 1):
         for j in range(START_VALUE, FINAL_VALUE):
-            result.append([f'{i} * {j} = {i*j}'])
+            result.append([f'{i} * {j} = {i * j}'])
 
     return result
 
 
 number = int(input('Number: '))
+matrix = multiplication_table(number)
 
-for row in multiplication_table(number):
+for row in matrix:
     print(*row)
 
 
